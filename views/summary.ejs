@@ -1,0 +1,52 @@
+
+<head>
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
+</head>
+<body>
+
+ 
+
+<table>
+<tr>
+    <th>Student name</th>
+    <th>profile picture</th>
+    <th>link</th>
+    <th>screenshots</th>
+    
+  </tr>
+  <tr>
+<% names.forEach(function(name){ %>
+ <tr>
+      <th><%=name.name%></th>
+      </tr>
+<tr>
+    <td><%=name.name%></td>
+    <td><img src= "<%=name.pp%>" alt="" border=3 height=100 width=100></img></td>
+    <td><%=name.works%></td>
+     <td><img src= "<%=name.sc%>" alt="" border=3 height=100 width=100></img></td>
+ </tr>
+    <% }) %>
+
+
+
+</table>  
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<header>
+	Welcome
+</header>
+<h1>choose</h1>
+<form action="/create" method="post">
+	Enter your name :<input type="text" name="name" >
+	<input type="submit" name="choose name">
+
+</form>
+
+<form action="/pic" method="POST" enctype="multipart/form-data">
+  Select an image to upload:
+  <input type="file" name="avatar"> 
+  <input type="submit" value="choose">
+</form>
+
+<!--<form action="/pic" method="post">
+	Select a file: <input type="file" name="pp">
+	<input type="submit" value="choose">
+</form>-->
+
+<form action="/add" method="post">
+	<input type="submit" value="add Work">
+</form>
+<%if(add){ %>
+<ul>
+	<form action="/screenshot" method="post" enctype="multipart/form-data">
+		Select a file: <input type="file" name="avatar">
+		<input type="submit" value="choose screenshot">
+	</form>
+</ul>
+<ul>
+	<form action="/link" method="post">
+		Enter a link :<input type="text" name="link" >
+		<input type="submit" value="add">
+
+	</form>
+</ul>
+<%}%>
+
+<form action="/creating" method="post">
+	<input type="submit" value="create" name = "done">
+</form>
+
+<%if(done){ %>
+    <ul>
+    <li>Your portfolio was successfully created</li>
+    </ul>
+    <%}%>
+
+
+<footer>
+	da
+</footer>

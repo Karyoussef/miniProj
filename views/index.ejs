@@ -1,0 +1,27 @@
+<header>
+	Registeration
+</header>
+<h1>register</h1>
+	<form method= "POST" action="/users/add">  
+		<label>User_Name</label><br>
+		<input type="text" name="User_Name">
+		<br>
+		<label>Password</label><br>
+		<input type="Password" name="Password">
+		
+	<input type="submit" name="register">
+
+	</form>
+
+<%if(errors != undefined){ %>
+    <ul>
+    <% errors.forEach(function(error){ %>
+    <li><%= error.msg %></li>
+    <% }) %>
+    </ul>
+    <%}%>
+
+
+<footer>
+	da
+</footer>
